@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Registration from "./components/Registration";
 import app from "./firebase";
+import UserList from './components/UserList';
+
 
 function App() {
   useEffect(() => {
@@ -12,7 +14,7 @@ function App() {
 
   return (
     <Router>
-      {/* Navbar */}
+     
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">Library Management System</Link>
@@ -21,23 +23,28 @@ function App() {
               <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/registration">Register</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/UserList">Register User</Link></li>
             </ul>
           </div>
         </div>
       </nav>
 
-      {/* Routes */}
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/UserList" element={ <UserList />} />
       </Routes>
 
-      {/* Firebase Test */}
+      
       <div className="container mt-4">
         <h1>Firebase Test</h1>
       </div>
+      
     </Router>
+
+    
   );
 }
 

@@ -28,9 +28,7 @@ if(phone.length !== 10 || isNaN(phone)){
  phone: phone,
  timestamp: new Date()
  });
- <div className="alert alert-success mt-3" role="alert">
- Registration successful!
-</div>
+ alert("Registration successful!");
  setName('');
  setEmail('');
  setPhone('');
