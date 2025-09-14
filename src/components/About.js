@@ -2,7 +2,7 @@ import React from 'react';
 function About() {
  return (
  <div className="container mt-5">
- <h2>About {`Your Project Title`}</h2>
+ <h2>About {`Library Management System`}</h2>
  <p>This app is developed to demonstrate mobile app skills using React and Firebase.</p>
  </div>
  );
