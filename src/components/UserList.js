@@ -120,7 +120,6 @@ const handleUpdate = async (e) => {
 </tbody>
 
       </table>
-
       
       {filteredUsers.map(user => (
         <div className="card mb-3 d-block d-md-none" key={user.id}>
